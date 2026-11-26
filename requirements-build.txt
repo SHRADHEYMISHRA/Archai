@@ -1,0 +1,2 @@
+# Windows release builder only; not required to run the development app.
+pyinstaller==6.22.3

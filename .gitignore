@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.imdesign
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+models/*.pt
+data/generated/
+tools/blender-*/

@@ -1,0 +1,8 @@
+# Optional local image-generation runtime; install separately from the base UI.
+# This does not include model weights. A compatible Diffusers-format checkpoint
+# must be obtained, licensed, and stored locally before image generation works.
+-r requirements-training-cu130.txt
+diffusers==0.42.0
+transformers==5.23.0
+accelerate==1.16.0
+safetensors==0.8.0

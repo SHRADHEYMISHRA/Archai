@@ -1,0 +1,22 @@
+[project]
+name = "interiormind"
+version = "0.1.0"
+description = "Offline-first architectural brief prototype"
+requires-python = ">=3.13,<3.15"
+dependencies = ["PySide6==6.10.1", "jsonschema==4.25.1", "numpy==2.5.5"]
+
+[project.scripts]
+interiormind = "interiormind.app:main"
+
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+interiormind = ["schemas/*.json", "assets/models/*.glb", "viewer/*.qml"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+norecursedirs = [".venv", "tools/blender-*", "build", "dist", ".git"]
